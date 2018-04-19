@@ -1,0 +1,13 @@
+custom_test_layouts_banner_8_4:
+  label: 'Custom test layout: Banner + 8-4'
+  category: 'Custom test layouts'
+  template: templates/custom-test-layout-8-4
+  class: '\Drupal\custom_test_layouts\Plugin\Layout\CustomTestLayouts_8_4'
+  default_region: main_content
+  regions:
+    banner:
+      label: Banner
+    main_content:
+      label: Main content
+    right_sidebar:
+      label: Right sidebar

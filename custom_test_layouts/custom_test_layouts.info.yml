@@ -1,0 +1,10 @@
+name: 'Custom test layouts'
+description: 'Defines all reusable panel layouts'
+type: module
+core: 8.x
+dependencies:
+  - ctools
+  - page_manager
+  - panels
+  - layout_discovery
+version: 8.x-1.0

@@ -1,0 +1,27 @@
+<!-- Banner region -->
+{% if content.banner|render|striptags %}
+<{{ settings.wrappers.banner }} class="row-wrapper billboard {{ settings.region_wrapper_classes.banner }}">
+    <div class="row grid-x grid-margin-x">
+        <section class="cell">
+            {{ content.banner }}
+        </section>
+    </div>
+</{{ settings.wrappers.banner }}>
+{% endif %}
+<!-- Banner region end -->
+<article>
+    <section class="row-wrapper">
+        <div class="row grid-x grid-margin-x">
+        <!-- Main content region -->
+            <{{ settings.wrappers.main_content }} class="cell small-12 medium-8 {{ settings.region_wrapper_classes.main_content }}">
+                {{ content.main_content }}
+            </{{ settings.wrappers.main_content }}>
+        <!-- Main content region end -->
+        <!-- Sidebar region -->
+            <{{ settings.wrappers.right_sidebar }} class="cell small-12 medium-4 {{ settings.region_wrapper_classes.right_sidebar }}">
+                {{ content.right_sidebar }}
+            </{{ settings.wrappers.right_sidebar }}>
+        <!-- Sidebar region end -->
+        </div>
+    </section>
+</article>
